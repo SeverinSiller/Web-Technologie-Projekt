@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musikverein Anif</title>
+    <link rel="stylesheet" href="MKAnif.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="Logo.jpeg" alt="Musikverein Logo" class="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="MKAnif.html">Home</a></li>
+                <li><a href="mitglieder.html">Mitglieder</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="termine.html">Termine</a></li>
+                <li><a href="kontaktformular.html">Kontakt</a></li>
+                <li><a href="instrumente.html">Instrumentenvorstellung</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <header>
+            <p class="current-date"></p>
+            <div class="icons">
+                <span id="prev" class="material-symbols-rounded">←</span>
+                <span id="next" class="material-symbols-rounded">→</span>
+            </div>
+        </header>
+        <div class="calendar">
+            <ul class="weeks">
+                <li>Mo</li>
+                <li>Di</li>
+                <li>Mi</li>
+                <li>Do</li>
+                <li>Fr</li>
+                <li>Sa</li>
+                <li>So</li>
+            </ul>
+            <ul class="days"></ul>
+        </div>
+    </div>
+</div>
+        <footer class="footer">
+            <p>&copy; 2024 Musikverein Anif</p>
+        </footer>
+    </main>
+    <script src="termine.js" defer></script>
+</body>
+</html>

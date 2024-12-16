@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musikverein Anif</title>
+    <link rel="stylesheet" href="MKAnif.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="mitglieder.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="Logo.jpeg" alt="Musikverein Logo" class="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="MKAnif.html">Home</a></li>
+                <li><a href="mitglieder.html">Mitglieder</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="termine.html">Termine</a></li>
+                <li><a href="kontaktformular.html">Kontakt</a></li>
+                <li><a href="instrumente.html">Instrumentenvorstellung</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Mitgliedertabelle</h1>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Vorname</th>
+                <th>Nachname</th>
+                <th>Register</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table> 
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="Floeten.jpg" style="width:auto">
+  <img class="mySlides" src="Klarinetten.jpg" style="width:auto">
+  <img class="mySlides" src="Saxophon.jpg" style="width:auto">
+  <img class="mySlides" src="Fluegelhorn.jpg" style="width:auto">
+  <img class="mySlides" src="Trompeten.jpg" style="width:auto">
+  <img class="mySlides" src="Tenorhorn.jpg" style="width:auto">
+  <img class="mySlides" src="Posaunen.jpg" style="width:auto">
+  <img class="mySlides" src="Tuba.jpg" style="width:auto">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>   
+        <footer class="footer">
+            <p>&copy; 2024 Musikverein Anif</p>
+        </footer>
+    </main>
+</body>
+</html>

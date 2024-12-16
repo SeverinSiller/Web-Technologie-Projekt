@@ -1,0 +1,10 @@
+[
+    { "Vorname": "Max", "Nachname": "Mustermann", "Register": "Tenorhorn" },
+    { "Vorname": "Maria", "Nachname": "Musterfrau", "Register": "Flöte" },
+    { "Vorname": "Severin", "Nachname": "Siller", "Register": "Schlagzeug" },
+    { "Vorname": "Thomas", "Nachname": "Putz", "Register": "Tuba" },
+    { "Vorname": "Felix", "Nachname": "Wimmer", "Register": "Posaune" },
+    { "Vorname": "Igor", "Nachname": "Barisic", "Register": "Klarinette" },
+    { "Vorname": "Pascal", "Nachname": "Roider", "Register": "Trompete" }
+  ]
+  

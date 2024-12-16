@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MKAnif.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="mitglieder.js" defer></script>
+    <title>Kontaktformular</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <img src="Logo.jpeg" alt="Musikverein Logo" class="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="MKAnif.html">Home</a></li>
+                <li><a href="mitglieder.html">Mitglieder</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="termine.html">Termine</a></li>
+                <li><a href="kontaktformular.html">Kontakt</a></li>
+                <li><a href="instrumente.html">Instrumentenvorstellung</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Kontaktformular</h1>
+    <form id="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" required>
+
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="user_email" required>
+
+        <label for="message">Nachricht:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Senden</button>
+    </form>
+
+    <!-- EmailJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        // EmailJS initialisieren
+        emailjs.init("IncHr8QvbIBXA3-eu");
+
+        // Formular-Event Listener
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Standard-Formularversand verhindern
+
+            // Daten aus dem Formular holen
+            const serviceID = "service_8kl4h0c";
+            const templateID = "template_5pllltl";
+
+            // EmailJS senden
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    alert("Nachricht erfolgreich gesendet!");
+                    document.getElementById("contact-form").reset(); // Formular zurücksetzen
+                }, (err) => {
+                    alert("Fehler beim Senden der Nachricht. Versuchen Sie es später noch einmal.");
+                    console.error("Fehler:", err);
+                });
+        });
+    </script>
+</body>
+</html>
